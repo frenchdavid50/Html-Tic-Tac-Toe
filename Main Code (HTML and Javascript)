@@ -5,7 +5,6 @@
 <SCRIPT TYPE="TEXT/JAVASCRIPT">
 var xTurn = true;
 
-
 function squareclicked(square)
 // squareclicked is a function that is called whenever a button is clicked.
 {
@@ -29,6 +28,7 @@ function squareclicked(square)
 }
    
  function makeComputerMove()
+ if ()
  {
  document.getElementById("0_0").value = "O";
  }
