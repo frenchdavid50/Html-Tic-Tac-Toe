@@ -36,6 +36,21 @@ function squareclicked(square)
 
 </SCRIPT>
 
+function newgame()
+{
+   var status = document.getElementById('status');
+
+   xTurn = true;
+   status.innerHTML = 'X\'s turn';
+
+   for(var x = 0; x < x++)
+   {
+      for(var y = 0; y < y++)
+      {
+         document.getElementById(x + '_' + y).value = ' ';
+      }
+   }
+}
 
 
 
