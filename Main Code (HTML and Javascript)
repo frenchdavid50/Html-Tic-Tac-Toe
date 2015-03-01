@@ -1,17 +1,13 @@
 <html>
 <Head>
 <Title?Tic Tac Toe</Title>
-<SCRIPT TYPE="TEXT/JAVASCRIPT">
-function squareclicked(square)
-// squareclicked is a function that is called whenever a button is clicked.
-{
-square.value = 'X';
-}
-</SCRIPT>
+
 <SCRIPT TYPE="TEXT/JAVASCRIPT">
 var xTurn = true;
 
+
 function squareclicked(square)
+// squareclicked is a function that is called whenever a button is clicked.
 {
  var status = document.getElementById('status');
  var value = square.value;
@@ -25,19 +21,20 @@ function squareclicked(square)
    }
    else
       {
-         square.value = 'O';
-         xTurn = true;
-         status.innerHTML = 'X\'s turn';
+         makeComputerMove();
       }
  }
    else
       alert('That square has already been played.');
 }
+   
+ function makeComputerMove()
+ {
+ document.getElementById("0_0").value = "O";
+ }
 
+ 
 </SCRIPT>
-
-
-
 
 </head>
 
@@ -56,11 +53,6 @@ function squareclicked(square)
 <INPUT TYPE="BUTTON" ID="2_2" VALUE="   "ONCLICK="squareclicked(this);">
 <BR>
 
-<INPUT TYPE="BUTTON" ID="NEWGAME" VALUE="New Game" ONCLICK="newgame();">
-
-
 <P ID="status">X's turn</P>
 
 </body>
-
-
