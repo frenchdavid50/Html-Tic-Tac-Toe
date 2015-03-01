@@ -1,0 +1,56 @@
+<html>
+<Head>
+<Title?Tic Tac Toe</Title>
+
+<SCRIPT TYPE="TEXT/JAVASCRIPT">
+var xTurn = true;
+
+function squareclicked(square)
+// squareclicked is a function that is called whenever a button is clicked.
+{
+ var status = document.getElementById('status');
+ var value = square.value;
+ if(value != 'X' && value != 'O')
+ {
+   if(xTurn)
+   {
+      square.value = 'X';
+      xTurn = false;
+      status.innerHTML = 'O\'s turn';
+   }
+   else
+      {
+         square.value = 'O';
+         xTurn = true;
+         status.innerHTML = 'X\'s turn';
+      }
+ }
+   else
+      alert('That square has already been played.');
+}
+   
+
+
+ 
+</SCRIPT>
+
+</head>
+
+<body>
+
+<INPUT TYPE="BUTTON" ID="0_0" VALUE="   "ONCLICK="squareclicked(this);">
+<INPUT TYPE="BUTTON" ID="1_0" VALUE="   "ONCLICK="squareclicked(this);">
+<INPUT TYPE="BUTTON" ID="2_0" VALUE="   "ONCLICK="squareclicked(this);">
+<BR>
+<INPUT TYPE="BUTTON" ID="0_1" VALUE="   "ONCLICK="squareclicked(this);">
+<INPUT TYPE="BUTTON" ID="1_1" VALUE="   "ONCLICK="squareclicked(this);">
+<INPUT TYPE="BUTTON" ID="2_1" VALUE="   "ONCLICK="squareclicked(this);">
+<BR>
+<INPUT TYPE="BUTTON" ID="0_2" VALUE="   "ONCLICK="squareclicked(this);">
+<INPUT TYPE="BUTTON" ID="1_2" VALUE="   "ONCLICK="squareclicked(this);">
+<INPUT TYPE="BUTTON" ID="2_2" VALUE="   "ONCLICK="squareclicked(this);">
+<BR>
+
+<P ID="status">X's turn</P>
+
+</body>
