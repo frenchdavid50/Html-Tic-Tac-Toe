@@ -4,6 +4,8 @@
 
 <SCRIPT TYPE="TEXT/JAVASCRIPT">
 var xTurn = true;
+var numMoves = 0;
+
 
 function squareclicked(square)
 // squareclicked is a function that is called whenever a button is clicked.
@@ -11,27 +13,25 @@ function squareclicked(square)
  var status = document.getElementById('status');
  var value = square.value;
  if(value != 'X' && value != 'O')
- {
-   if(xTurn)
-   {
-      square.value = 'X';
-      xTurn = false;
-      status.innerHTML = 'O\'s turn';
-   }
-   else
-      {
-         makeComputerMove();
-      }
- }
-   else
-      alert('That square has already been played.');
+{
+numMoves++;
+square.value = 'X';
+makeComputerMove();
+}
 }
    
- function makeComputerMove()
- if ()
+ function makeComputerMove(
  {
- document.getElementById("0_0").value = "O";
- }
+  var status = document.getElementById('status');
+  var val0;
+  var val1;
+  var val2;
+
+  // check columns
+  document.getElementById("0_0").value = "O"; 
+
+ 
+ 
 
  
 </SCRIPT>
@@ -53,6 +53,5 @@ function squareclicked(square)
 <INPUT TYPE="BUTTON" ID="2_2" VALUE="   "ONCLICK="squareclicked(this);">
 <BR>
 
-<P ID="status">X's turn</P>
 
 </body>
