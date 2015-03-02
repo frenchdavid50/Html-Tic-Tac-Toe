@@ -18,8 +18,9 @@ square.value = 'X';
 makeComputerMove();
 }
 }
-   
+   var 00 = 
  function makeComputerMove()
+  if(00 != 'X' && value != 'O')
     {
   document.getElementById("0_0").value = "O"; 
   }
