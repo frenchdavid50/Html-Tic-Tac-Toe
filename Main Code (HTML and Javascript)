@@ -3,27 +3,46 @@
 <Title?Tic Tac Toe</Title>
 
 <SCRIPT TYPE="TEXT/JAVASCRIPT">
-var xTurn = true;
-
-
 
 function squareclicked(square)
 // squareclicked is a function that is called whenever a button is clicked.
 {
- var status = document.getElementById('status');
  var value = square.value;
- if(value != 'X' && value != 'O')
+ if (value != 'X' && value != 'O') {
+   square.value = 'X';
+   makeComputerMove();
+ }
+}
+
+function makeComputerMove()
 {
-square.value = 'X';
-makeComputerMove();
+val11 = document.getElementById("1_1").value;
+val01 = document.getElementById("0_1").value;
+val02 = document.getElementById("0_2").value;
+val10 = document.getElementById("1_0").value;
+val20 = document.getElementById("2_0").value;
+val11 = document.getElementById("1_1").value;
+val12 = document.getElementById("1_2").value;
+val21 = document.getElementById("2_1").value;
+val22 = document.getElementById("2_2").value;
+val00 = document.getElementById("0_0").value;
+
+if (val00 == 'X') {
+  document.getElementById("1_1").value = "O";
+} else if (val11 == 'X') {
+  document.getElementById("0_0").value = "O";
+} else if (val01 == 'X') {
+  document.getElementById("0_2").value = "O";
+} else if (val02 == 'X') {
+  document.getElementById("2_2").value = "O";
+} else if (val10 == 'X') {
+  document.getElementById("0_1").value = "O";
+} else if (val20 == 'X') {
+  document.getElementById("0_2").value = "O";
+} else if (val12 == 'X') {
+  document.getElementById("2_0").value = "O";
 }
 }
-   var 00 = 
- function makeComputerMove()
-  if(00 != 'X' && value != 'O')
-    {
-  document.getElementById("0_0").value = "O"; 
-  }
  
   
   
