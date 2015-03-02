@@ -4,7 +4,7 @@
 
 <SCRIPT TYPE="TEXT/JAVASCRIPT">
 var xTurn = true;
-var numMoves = 0;
+
 
 
 function squareclicked(square)
@@ -14,21 +14,18 @@ function squareclicked(square)
  var value = square.value;
  if(value != 'X' && value != 'O')
 {
-numMoves++;
 square.value = 'X';
 makeComputerMove();
 }
 }
    
- function makeComputerMove(
- {
-  var status = document.getElementById('status');
-  var val0;
-  var val1;
-  var val2;
-
-  // check columns
+ function makeComputerMove()
+    {
   document.getElementById("0_0").value = "O"; 
+  }
+ 
+  
+  
 
  
  
