@@ -2,6 +2,8 @@
 <Head>
 <Title?Tic Tac Toe</Title>
 
+<p>Click on a square to make your first move. The computer will then make a move after you. Repeat until the game is over.</p>
+
 <SCRIPT TYPE="TEXT/JAVASCRIPT">
 
 function squareclicked(square)
