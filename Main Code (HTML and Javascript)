@@ -27,23 +27,23 @@ val21 = document.getElementById("2_1").value;
 val22 = document.getElementById("2_2").value;
 val00 = document.getElementById("0_0").value;
 
-if (val00 == 'X') {
+if (val00 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
-} else if (val10 == 'X') {
+} else if (val10 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
-} else if (val20 == 'X') {
+} else if (val20 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
-} else if (val01 == 'X') {
+} else if (val01 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
-} else if (val02 == 'X') {
+} else if (val02 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
-} else if (val22 == 'X') {
+} else if (val22 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
-} else if (val12 == 'X') {
+} else if (val12 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
-} else if (val21 == 'X') {
+} else if (val21 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
-} else if (val11 == 'X') {
+} else if (val11 == 'X' && val00 != 'X' && val00 != 'O') {
   document.getElementById("0_0").value = "O";
 } 
 }
