@@ -42,7 +42,7 @@ val00 = document.getElementById("0_0").value;
   document.getElementById("1_1").value = "O";
 } else if (val21 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
- } 
+} 
  
 }
  
