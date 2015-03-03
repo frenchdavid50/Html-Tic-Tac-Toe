@@ -90,6 +90,10 @@ val00 = document.getElementById("0_0").value;
   document.getElementById("0_2").value = "O";
 } else if (val02 == 'O' && val01 == 'O' && val00 != 'X' && val00 != 'O') {
   document.getElementById("0_0").value = "O";
+} else if (val20 == 'O' && val21 == 'O' && val22 != 'X' && val22 != 'O') {
+  document.getElementById("2_2").value = "O";
+} else if (val22 == 'O' && val21 == 'O' && val20 != 'X' && val20 != 'O') {
+  document.getElementById("2_0").value = "O";
 } 
 }
 </SCRIPT>
