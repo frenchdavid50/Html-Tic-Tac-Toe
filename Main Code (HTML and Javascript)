@@ -144,6 +144,10 @@ val00 = document.getElementById("0_0").value;
   
 } else if (val22 == 'X' && val12 == 'X' && val20 != 'X' && val20 != 'O') {
  document.getElementById("2_0").value = "O";
+} else if (val20 == 'X' && val11 == 'X' && val02 != 'X' && val02 != 'O') {
+ document.getElementById("0_2").value = "O";
+} else if (val02 == 'X' && val11 == 'X' && val20 != 'X' && val20 != 'O') {
+ document.getElementById("2_0").value = "O";
 } 
 
 }
