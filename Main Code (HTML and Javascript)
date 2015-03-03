@@ -143,10 +143,7 @@ val00 = document.getElementById("0_0").value;
 } else if (val20 == 'X' && val21 == 'X' && val22 != 'X' && val22 != 'O') {
   document.getElementById("2_2").value = "O";
   
-} else if (val22 == 'X' && val12 == 'X' && val20 != 'X' && val20 != 'O') {
- document.getElementById("2_0").value = "O";
- 
-} else if (val20 == 'X' && val11 == 'X' && val02 != 'X' && val02 != 'O') {
+}  else if (val20 == 'X' && val11 == 'X' && val02 != 'X' && val02 != 'O') {
  document.getElementById("0_2").value = "O";
  
 } else if (val02 == 'X' && val11 == 'X' && val20 != 'X' && val20 != 'O') {
@@ -167,7 +164,7 @@ val00 = document.getElementById("0_0").value;
 } else if (val20 == 'X' && val02 == 'X' && val11 != 'X' && val11 != 'O') {
  document.getElementById("1_1").value = "O";
  
-}else if (val22 == 'X' && val02 == 'X' && val12 != 'X' && val12 != 'O') {
+} else if (val22 == 'X' && val02 == 'X' && val12 != 'X' && val12 != 'O') {
  document.getElementById("1_2").value = "O";
 }
  else if (val11 != 'X' && val11 != 'O') {
