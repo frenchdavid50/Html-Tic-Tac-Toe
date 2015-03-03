@@ -21,13 +21,12 @@ val01 = document.getElementById("0_1").value;
 val02 = document.getElementById("0_2").value;
 val10 = document.getElementById("1_0").value;
 val20 = document.getElementById("2_0").value;
-val11 = document.getElementById("1_1").value;
 val12 = document.getElementById("1_2").value;
 val21 = document.getElementById("2_1").value;
 val22 = document.getElementById("2_2").value;
 val00 = document.getElementById("0_0").value;
 
-if (val00 == 'X' && val11 != 'X' && val11 != 'O') {
+ if (val00 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
 } else if (val10 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
@@ -46,13 +45,6 @@ if (val00 == 'X' && val11 != 'X' && val11 != 'O') {
  } 
  
 }
- 
-  
-  
-
- 
- 
-
  
 </SCRIPT>
 
