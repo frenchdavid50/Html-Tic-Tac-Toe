@@ -43,6 +43,8 @@ if (val00 == 'X') {
   document.getElementById("1_1").value = "O";
 } else if (val21 == 'X') {
   document.getElementById("1_1").value = "O";
+} else if (val11 == 'X') {
+  document.getElementById("0_0").value = "O";
 } 
 }
  
