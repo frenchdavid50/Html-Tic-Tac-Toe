@@ -42,7 +42,17 @@ val00 = document.getElementById("0_0").value;
   document.getElementById("1_1").value = "O";
 } else if (val21 == 'X' && val11 != 'X' && val11 != 'O') {
   document.getElementById("1_1").value = "O";
-} 
+} else if (val11 == 'X' && val00 != 'X' && val00 != 'O') {
+  document.getElementById("0_0").value = "O";
+} else if (val00 == 'X' && val01 == 'X' && val02 != 'X' && val02 != 'O') {
+  document.getElementById("0_2").value = "O";
+} else if (val00 == 'X' && val10 == 'X' && val20 != 'X' && val20 != 'O') {
+  document.getElementById("2_0").value = "O";
+} else if (val02 == 'X' && val01 == 'X' && val00 != 'X' && val00 != 'O') {
+  document.getElementById("0_0").value = "O";
+} else if (val02 == 'X' && val12 == 'X' && val22 != 'X' && val22 != 'O') {
+  document.getElementById("2_2").value = "O";
+}
  
 }
  
