@@ -58,6 +58,9 @@ val00 = document.getElementById("0_0").value;
 } else if (val11 == 'O' && val20 == 'O' && val02 != 'X' && val02 != 'O') {
   document.getElementById("0_2").value = "O";
   
+} else if (val11 == 'O' && val00 == 'O' && val22 != 'X' && val22 != 'O') {
+  document.getElementById("2_2").value = "O";
+  
 } else if (val11 == 'O' && val02 == 'O' && val20 != 'X' && val20 != 'O') {
   document.getElementById("2_0").value = "O";
   
