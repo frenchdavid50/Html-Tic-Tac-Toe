@@ -199,12 +199,6 @@ val00 = document.getElementById("0_0").value;
 } else if (val21 != 'X' && val21 != 'O') {
  document.getElementById("2_1").value = "O";
  
-} else if (val21 != 'X' && val21 != 'O') {
- document.getElementById("2_1").value = "O";
- 
-} else if (val21 != 'X' && val21 != 'O') {
- document.getElementById("2_1").value = "O";
- 
 } else if (val10 != 'X' && val10 != 'O') {
  document.getElementById("1_0").value = "O";
  
