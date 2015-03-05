@@ -180,8 +180,8 @@ val00 = document.getElementById("0_0").value;
  
 } else if (val22 == 'X' && val02 == 'X' && val12 != 'X' && val12 != 'O') {
  document.getElementById("1_2").value = "O";
-}
- else if (val11 != 'X' && val11 != 'O') {
+ 
+} else if (val11 != 'X' && val11 != 'O') {
  document.getElementById("1_1").value = "O";
  
 } else if (val00 != 'X' && val00 != 'O') {
