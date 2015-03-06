@@ -196,14 +196,14 @@ val00 = document.getElementById("0_0").value;
 } else if (val00 != 'X' && val00 != 'O') {
  document.getElementById("0_0").value = "O";
  
-} else if (val02 != 'X' && val02 != 'O') {
- document.getElementById("0_2").value = "O";
+} else if (val20 != 'X' && val20 != 'O') {
+ document.getElementById("2_0").value = "O";
  
 } else if (val22 != 'X' && val22 != 'O') {
  document.getElementById("2_2").value = "O";
  
-} else if (val20 != 'X' && val20 != 'O') {
- document.getElementById("2_0").value = "O";
+} else if (val02 != 'X' && val02 != 'O') {
+ document.getElementById("0_2").value = "O";
  
 } else if (val21 != 'X' && val21 != 'O') {
  document.getElementById("2_1").value = "O";
